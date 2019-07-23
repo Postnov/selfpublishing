@@ -26,6 +26,12 @@ img {max-width: 100%;}
   &-block {display: block; max-width: max-content;}
 }
 
+/* section */
+.section {
+  &-title {font-size: 1.75rem; color: $secondary-dark; margin: 0;}
+  &-subtitle {color: $secondary; margin: 16px 0 0;}
+}
+
 /* header */
 .header {background-color: $secondary-dark; padding: 20px 0;
   .row {align-items: center;}
@@ -74,6 +80,20 @@ img {max-width: 100%;}
 }
 
 /* publish-section */
+.publish-section { padding: 170px 0 330px; text-align: center;
+  .section-title,
+  .section-subtitle {max-width: 477px; margin-left: auto; margin-right: auto;}
+
+  .swiper {
+    &-container {padding: 0 30px; margin: 25px auto;}
+    &-slide {border: 1px solid #E6E6EF;border-radius: 5px; height: 80px;
+      display: flex; align-items: center; justify-content: center; box-sizing: border-box;}
+    &-button-prev, &-button-next {background-image: url('../images/slider-icon.svg');
+      width: 6px; height: 12px; background-size: cover; top: 50%; bottom: auto; margin: 0;
+    transform: translateY(-50%);}
+    &-button-prev {transform: translateY(-50%) rotate(-180deg);}
+  }
+}
 
 /* trend-section */
 

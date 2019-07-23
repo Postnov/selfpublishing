@@ -43,11 +43,15 @@ html(lang="ru")
     //publish-section
     section.section.publish-section
       .container.section-container
-        .section-title Опубликуйте вашу книгу в магазинах бесплатно
-        .section-subtitle Мы сами разместим вашу аудиокнигу в крупнейших магазинах бесплатно
-        .publish-section-carousel
-          .publish-section-slide
-            img(src="", alt="")
+        h2.section-title Опубликуйте вашу книгу в магазинах бесплатно
+        p.section-subtitle Мы сами разместим вашу аудиокнигу в крупнейших магазинах бесплатно
+        .publish-section-slider.swiper-container.js-publish-slider
+          .swiper-wrapper
+            each i in ['shop-slider-1.png', 'shop-slider-2.png', 'shop-slider-3.png', 'shop-slider-4.png']
+              .publish-section-slide.swiper-slide
+                img(src='images/'+i, alt="")
+          .swiper-button-prev
+          .swiper-button-next
         button.publish-section-button.btn Начать работу прямо сейчас
 
     //trend-section
