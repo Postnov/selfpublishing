@@ -26,6 +26,10 @@ img {max-width: 100%;}
 }
 
 /* header */
+.header {background-color: $secondary; padding: 20px 0;
+  .row {align-items: center;}
+  &-button {margin-left: auto; display: block; padding: 14px 50px;}
+}
 
 /* top-sections */
 
