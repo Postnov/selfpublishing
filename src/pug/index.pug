@@ -15,23 +15,30 @@ html(lang="ru")
             button.header-button.btn Вход
 
     //top-sections
-    section.section.top-sections
+    section.section.top-section
       .container.section-container
-        .top-section-carousel
-          h1.top-section-title Издайте свою аудиокнигу за 9 500 рублей и 15 минут
-          .top-section-button.btn
+        .top-section-slider.swiper-container.js-top-slider
+          .swiper-wrapper
+            each i in ['9500','1500','2500','3000']
+              .swiper-slide.top-section-slide
+                p.top-section-title Издайте свою аудиокнигу за #[=i] рублей и 15 минут
+          button.top-section-button.btn Создать аудиокнигу
+          .swiper-pagination
+
 
         .top-section-steps.steps
           .steps-list
-            each item in steps
-              .steps-item
-                img.steps-item-img(src=item.img alt="")
-                .steps-item-text=item.text
+            .row
+              each item in steps
+                .col.col-25.col-m-100
+                  .steps-item
+                    img.steps-item-img(src="images/"+item.img alt="")
+                    .steps-item-text=item.text
 
         .top-section-audio.top-audio
           h2.top-audio-title Ваша аудиокнига может звучать так
           .top-audio-player
-            img(src="", alt="")
+            img(src="images/player.png", alt="")
 
     //publish-section
     section.section.publish-section
