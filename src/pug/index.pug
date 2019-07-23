@@ -1,47 +1,146 @@
 doctype html
 html(lang="ru")
   include partials/head.pug
+  include partials/vars.pug
   body
 
     //header
     header.header
       .container.section-container
+        .header-logo
+          img(src="images/logo.svg" alt="")
+        button.header-button.btn Вход
 
     //top-sections
     section.section.top-sections
       .container.section-container
+        .top-section-carousel
+          h1.top-section-title Издайте свою аудиокнигу за 9 500 рублей и 15 минут
+          .top-section-button.btn
+
+        .top-section-steps.steps
+          .steps-list
+            each item in steps
+              .steps-item
+                img.steps-item-img(src=item.img alt="")
+                .steps-item-text=item.text
+
+        .top-section-audio.top-audio
+          h2.top-audio-title Ваша аудиокнига может звучать так
+          .top-audio-player
+            img(src="", alt="")
 
     //publish-section
     section.section.publish-section
       .container.section-container
+        .section-title Опубликуйте вашу книгу в магазинах бесплатно
+        .section-subtitle Мы сами разместим вашу аудиокнигу в крупнейших магазинах бесплатно
+        .publish-section-carousel
+          .publish-section-slide
+            img(src="", alt="")
+        button.publish-section-button.btn Начать работу прямо сейчас
 
     //trend-section
     section.section.trend-section
       .container.section-container
+        .section-title Аудиокниги — новый нарастающий тренд в ритейле
+        .section-subtitle Ежедневно люди ищут возможности и время на получение ценного контента
+
+        .trend-section-statistics
+          span.trend-section-percent 40%
+          span.trend-section-text рост рынка аудиокниг в год *
+          a.trend-section-link(href="#") *по данным «Эксмо-АСТ»
+
 
     //benefit-section
     section.section.benefit-section
       .container.section-container
+        .section-title Speechki — это выгодно
+        .row
+          .col.col-50.col-m-100
+            .benefit-item.benefit-item-dark
+              img.benefit-item-img(src="" alt="")
+              p.benefit-item-title Аудиокнига, созданная человеком
+              div.benefit-item-text
+                p — Стоимость около 170 000 рублей
+                p — Готовность 1 месяц
+                p — Сложный, неоднозначный процесс до публикации в магазинах.
+              button.benefit-item-button Долго и не выгодно
+          .col.col-50.col-m-100
+            .benefit-item
+              img.benefit-item-img(src="" alt="")
+              p.benefit-item-title Аудиокнига, созданная искусственным интеллектом
+              div.benefit-item-text
+                p — Стоимость 9 500 рулей
+                p — Моментальная готовность
+                p — Элементарный процесс от создания до начала заработка
+              button.benefit-item-button Создать свою аудиокнигу
+
 
     //features-section
     section.section.features-section
       .container.section-container
+        .features-item
+          img.features-item-img(src="" alt="")
+          .features-item-description
+            p.features-item-title Зарабатывайте на аудиокнигах
+            p.features-item-text Мы ежемесячно выплачиваем вам вознаграждение.Вы отслеживаете статистику по продажам на всех платформах в одном месте
+
+        .features-item
+          img.features-item-img(src="" alt="")
+          .features-item-description
+            p.features-item-title Все права остаются у вас
+            p.features-item-text Вы самостоятельно распоряжаетесь своим прозведением и можете распространять его любыми доступными вам способами
+
 
     //suit-section
     section.section.suit-section
       .container.section-container
+        .row
+          each item in suit
+            .col.col-25.col-t-50
+              .suit-item
+                img.suit-item-img(src=item.img alt="")
+                span.suit-item-text=item.text
+        button.suit-section-button.btn Начать работу прямо сейчас
 
     //features-section
     section.section.features-section
       .container.section-container
+        .features-item
+          img.features-item-img(src="" alt="")
+          .features-item-description
+            p.features-item-title Удобный и простой интерфейс
+            .features-item-text
+              p Просматривайте книгу в электронном виде.
+              p Редактируйте предложения и фразы.
+              p Проверяйте получившийся результат в реальном времени.
 
+        .features-item
+          img.features-item-img(src="" alt="")
+          .features-item-description
+            p.features-item-title Анализируйте продажи
+            p.features-item-text Вы можете просматривать аналитику продажи вашей книги в реальном времени.
     //offer-section
     section.section.offer-section
       .container.section-container
+        h2.offer-section-title Начни прямо сейчас
+        p.offer-section-title Издайте свою аудиокнигу за 9 500 рублей и 15 минут
+        p.offer-section-text Отправьте заявку на получение информации об открытии сервиса и получите закрытый доступ к тестированию личного кабинета первым! Первым 100 авторам дарим специальные условия по работе с сервисом!
+        button.offer-section-button.btn Начать сейчас
+        p.offer-section-tip *Сервис начинает свою работу #[span 18.08.2019]
 
     //footer
     footer.footer
       .container.section-container
+        .row
+          .col.col-50.col-m-100
+            .footer-logo
+              img(src="" alt="")
+            a.footer-confidential(href="#") Политика конфиденциальности
+          .col.col-50.col-m-100
+            .footer-contacts
+              a(href="mailto:hello@speechki.org")
 
 
     include partials/scripts.pug
