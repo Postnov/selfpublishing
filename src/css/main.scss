@@ -9,8 +9,8 @@ body {box-sizing: border-box; font-size: 16px;}
   margin-right: auto; width: 100%; max-width: 1465px;}
 
 a {color: $primary;
-  &:hover {background-color: $primary-dark;}
-  &:active {background-color: $primary-light;}
+  &:hover {color: $primary-dark;}
+  &:active {color: $primary-light;}
 }
 
 img {max-width: 100%;}
