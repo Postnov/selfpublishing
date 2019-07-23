@@ -1,22 +1,221 @@
 <!DOCTYPE html>
 <html lang="ru">
-<title>Site title</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="descr content">
-<meta name="keywords" content="key,words">
-<link rel="shortcut icon" href="/favicon.ico">
-<link href="css/main.css" rel="stylesheet">
-<!--
+  <title>Site title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="descr content">
+  <meta name="keywords" content="key,words">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <!--
   <meta property="og:title" content="title"/>
   <meta property="og:description" content="description"/>
   <meta property="og:image" content="image" />
   <meta property="og:type" content="type"/>
   <meta property="og:url" content= "url" />
   -->
-
-<body>
+  <body>
+    <!--header-->
+    <header class="header">
+      <div class="container section-container">
+        <div class="row">
+          <div class="col col-50"><a class="header-logo" href="#"><img src="images/logo.svg" alt="Logo"></a></div>
+          <div class="col col-50">
+            <button class="header-button btn">Вход</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--top-sections-->
+    <section class="section top-section">
+      <div class="container section-container">
+        <div class="top-section-slider swiper-container js-top-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide top-section-slide">
+              <p class="top-section-title">Издайте свою аудиокнигу за 9500 рублей и 15 минут
+              </p>
+            </div>
+            <div class="swiper-slide top-section-slide">
+              <p class="top-section-title">Издайте свою аудиокнигу за 1500 рублей и 15 минут
+              </p>
+            </div>
+            <div class="swiper-slide top-section-slide">
+              <p class="top-section-title">Издайте свою аудиокнигу за 2500 рублей и 15 минут
+              </p>
+            </div>
+            <div class="swiper-slide top-section-slide">
+              <p class="top-section-title">Издайте свою аудиокнигу за 3000 рублей и 15 минут
+              </p>
+            </div>
+          </div>
+          <button class="top-section-button btn">Создать аудиокнигу</button>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="top-section-steps steps">
+          <div class="steps-list">
+            <div class="row">
+              <div class="col col-25 col-m-100">
+                <div class="steps-item"><img class="steps-item-img" src="images/icon-load.svg" alt="">
+                  <div class="steps-item-text">Загрузите книгу в формате docx, epub или f82</div>
+                </div>
+              </div>
+              <div class="col col-25 col-m-100">
+                <div class="steps-item"><img class="steps-item-img" src="images/icon-pause.svg" alt="">
+                  <div class="steps-item-text">Расставьте паузы и ударения, если это потребуется  </div>
+                </div>
+              </div>
+              <div class="col col-25 col-m-100">
+                <div class="steps-item"><img class="steps-item-img" src="images/icon-settings.svg" alt="">
+                  <div class="steps-item-text">Настройте желаемый голос</div>
+                </div>
+              </div>
+              <div class="col col-25 col-m-100">
+                <div class="steps-item"><img class="steps-item-img" src="images/icon-book.svg" alt="">
+                  <div class="steps-item-text">Книга опубликуется в магазинах и начнет приносить вам прибыль</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-section-audio top-audio">
+          <h2 class="top-audio-title">Ваша аудиокнига может звучать так</h2>
+          <div class="top-audio-player"><img src="images/player.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <!--publish-section-->
+    <section class="section publish-section">
+      <div class="container section-container">
+        <div class="section-title">Опубликуйте вашу книгу в магазинах бесплатно</div>
+        <div class="section-subtitle">Мы сами разместим вашу аудиокнигу в крупнейших магазинах бесплатно</div>
+        <div class="publish-section-carousel">
+          <div class="publish-section-slide"><img src="" alt=""></div>
+        </div>
+        <button class="publish-section-button btn">Начать работу прямо сейчас</button>
+      </div>
+    </section>
+    <!--trend-section-->
+    <section class="section trend-section">
+      <div class="container section-container">
+        <div class="section-title">Аудиокниги — новый нарастающий тренд в ритейле</div>
+        <div class="section-subtitle">Ежедневно люди ищут возможности и время на получение ценного контента</div>
+        <div class="trend-section-statistics"><span class="trend-section-percent">40%</span><span class="trend-section-text">рост рынка аудиокниг в год *</span><a class="trend-section-link" href="#">*по данным «Эксмо-АСТ»</a></div>
+      </div>
+    </section>
+    <!--benefit-section-->
+    <section class="section benefit-section">
+      <div class="container section-container">
+        <div class="section-title">Speechki — это выгодно</div>
+        <div class="row">
+          <div class="col col-50 col-m-100">
+            <div class="benefit-item benefit-item-dark"><img class="benefit-item-img" src="" alt="">
+              <p class="benefit-item-title">Аудиокнига, созданная человеком</p>
+              <div class="benefit-item-text">
+                <p>— Стоимость около 170 000 рублей</p>
+                <p>— Готовность 1 месяц</p>
+                <p>— Сложный, неоднозначный процесс до публикации в магазинах.</p>
+              </div>
+              <button class="benefit-item-button">Долго и не выгодно</button>
+            </div>
+          </div>
+          <div class="col col-50 col-m-100">
+            <div class="benefit-item"><img class="benefit-item-img" src="" alt="">
+              <p class="benefit-item-title">Аудиокнига, созданная искусственным интеллектом</p>
+              <div class="benefit-item-text">
+                <p>— Стоимость 9 500 рулей</p>
+                <p>— Моментальная готовность</p>
+                <p>— Элементарный процесс от создания до начала заработка</p>
+              </div>
+              <button class="benefit-item-button">Создать свою аудиокнигу</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--features-section-->
+    <section class="section features-section">
+      <div class="container section-container">
+        <div class="features-item"><img class="features-item-img" src="" alt="">
+          <div class="features-item-description">
+            <p class="features-item-title">Зарабатывайте на аудиокнигах</p>
+            <p class="features-item-text">Мы ежемесячно выплачиваем вам вознаграждение.Вы отслеживаете статистику по продажам на всех платформах в одном месте</p>
+          </div>
+        </div>
+        <div class="features-item"><img class="features-item-img" src="" alt="">
+          <div class="features-item-description">
+            <p class="features-item-title">Все права остаются у вас</p>
+            <p class="features-item-text">Вы самостоятельно распоряжаетесь своим прозведением и можете распространять его любыми доступными вам способами</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--suit-section-->
+    <section class="section suit-section">
+      <div class="container section-container">
+        <div class="row">
+          <div class="col col-25 col-t-50">
+            <div class="suit-item"><img class="suit-item-img" src="" alt=""><span class="suit-item-text">Одноголосная озвучка</span></div>
+          </div>
+          <div class="col col-25 col-t-50">
+            <div class="suit-item"><img class="suit-item-img" src="" alt=""><span class="suit-item-text">Многоголосная озвучка</span></div>
+          </div>
+          <div class="col col-25 col-t-50">
+            <div class="suit-item"><img class="suit-item-img" src="" alt=""><span class="suit-item-text">Non-fiction литература</span></div>
+          </div>
+          <div class="col col-25 col-t-50">
+            <div class="suit-item"><img class="suit-item-img" src="" alt=""><span class="suit-item-text">Эмоциональная озвучка</span></div>
+          </div>
+        </div>
+        <button class="suit-section-button btn">Начать работу прямо сейчас</button>
+      </div>
+    </section>
+    <!--features-section-->
+    <section class="section features-section">
+      <div class="container section-container">
+        <div class="features-item"><img class="features-item-img" src="" alt="">
+          <div class="features-item-description">
+            <p class="features-item-title">Удобный и простой интерфейс</p>
+            <div class="features-item-text">
+              <p>Просматривайте книгу в электронном виде.</p>
+              <p>Редактируйте предложения и фразы.</p>
+              <p>Проверяйте получившийся результат в реальном времени.</p>
+            </div>
+          </div>
+        </div>
+        <div class="features-item"><img class="features-item-img" src="" alt="">
+          <div class="features-item-description">
+            <p class="features-item-title">Анализируйте продажи</p>
+            <p class="features-item-text">Вы можете просматривать аналитику продажи вашей книги в реальном времени.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--offer-section-->
+    <section class="section offer-section">
+      <div class="container section-container">
+        <h2 class="offer-section-title">Начни прямо сейчас</h2>
+        <p class="offer-section-title">Издайте свою аудиокнигу за 9 500 рублей и 15 минут</p>
+        <p class="offer-section-text">Отправьте заявку на получение информации об открытии сервиса и получите закрытый доступ к тестированию личного кабинета первым! Первым 100 авторам дарим специальные условия по работе с сервисом!</p>
+        <button class="offer-section-button btn">Начать сейчас</button>
+        <p class="offer-section-tip">*Сервис начинает свою работу <span>18.08.2019</span></p>
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="footer">
+      <div class="container section-container">
+        <div class="row">
+          <div class="col col-50 col-m-100">
+            <div class="footer-logo"><img src="" alt=""></div><a class="footer-confidential" href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="col col-50 col-m-100">
+            <div class="footer-contacts"><a href="mailto:hello@speechki.org"></a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
