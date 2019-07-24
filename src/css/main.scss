@@ -28,7 +28,7 @@ img {max-width: 100%;}
 
 /* section */
 .section {
-  &-title {font-size: 1.75rem; color: $secondary-dark; margin: 0;}
+  &-title {font-size: 1.75rem; color: $secondary-dark; margin: 0; font-weight: 700;}
   &-subtitle {color: $secondary; margin: 16px 0 0;}
 }
 
@@ -100,10 +100,25 @@ img {max-width: 100%;}
 /* benefit-section */
 
 /* features-section */
+.features-section { padding: 70px 0 160px;
+  .features-item {
+    @media (max-width: $tablet) {
+      &:first-child {margin-bottom: 80px;}
+    }
+    &-img {display: block; margin: 0 auto;
+      @media (max-width: $tablet) {margin-top: 20px;}
+    }
+    &-title {font-weight: 700; font-size: 1.75rem; color: $secondary-dark;
+    margin: 0;}
+    &-text {max-width: 490px; line-height: 1.6; color: $secondary; margin: 16px 0 0;
+      p {margin: 10px 0;}
+    }
+    .row {align-items: center;}
+  }
+}
 
 /* suit-section */
 
-/* features-section */
 
 /* offer-section */
 
