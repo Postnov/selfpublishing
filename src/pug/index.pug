@@ -114,12 +114,15 @@ html(lang="ru")
     //suit-section
     section.section.suit-section
       .container.section-container
-        .row
-          each item in suit
-            .col.col-25.col-t-50
-              .suit-item
-                img.suit-item-img(src=item.img alt="")
-                span.suit-item-text=item.text
+        h2.section-title Кому мы подходим
+        .suit-grid
+          .row
+            each item in suit
+              .col.col-25.col-t-50.col-m-100
+                .suit-item
+                  .suit-item-img
+                    img(src='images/'+item.img alt=item.text)
+                  span.suit-item-text=item.text
         button.suit-section-button.btn Начать работу прямо сейчас
 
     //features-section
