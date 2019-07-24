@@ -137,6 +137,20 @@ img {max-width: 100%;}
 }
 
 /* offer-section */
+.offer-section { background-image: url('../images/union-gray.svg');
+  background-size: 900px auto; padding: 70px 0; text-align: center;
+  background-position: center center; background-repeat: no-repeat;
+  @media (max-width: $mobile) {text-align: left;}
+
+  &-title {color: $primary; font-size: 2.125rem; margin: 0;}
+  &-subtitle {color: $secondary; font-size: 1.5rem; margin: 10px 0 0;
+    font-weight: 700;}
+  &-text {max-width: 630px; margin: 16px auto 0; line-height: 1.5;}
+  &-button {margin-top: 28px;}
+  &-tip {color: $secondary-darken; margin: 16px 0 0;
+    span {color: $primary;}
+  }
+}
 
 /* footer */
 
