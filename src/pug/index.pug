@@ -64,7 +64,7 @@ html(lang="ru")
           .trend-section-statistics
             span.trend-section-percent 40%
             span.trend-section-text рост рынка аудиокниг в год *
-            p*по #[a.trend-section-link(href="#") данным «Эксмо-АСТ»]
+            p *по #[a.trend-section-link(href="#") данным «Эксмо-АСТ»]
 
 
     //benefit-section
@@ -73,23 +73,27 @@ html(lang="ru")
         .section-title Speechki — это выгодно
         .row
           .col.col-50.col-m-100
-            .benefit-item.benefit-item-dark
-              img.benefit-item-img(src="" alt="")
-              p.benefit-item-title Аудиокнига, созданная человеком
-              div.benefit-item-text
-                p — Стоимость около 170 000 рублей
-                p — Готовность 1 месяц
-                p — Сложный, неоднозначный процесс до публикации в магазинах.
-              button.benefit-item-button Долго и не выгодно
-          .col.col-50.col-m-100
             .benefit-item
-              img.benefit-item-img(src="" alt="")
-              p.benefit-item-title Аудиокнига, созданная искусственным интеллектом
-              div.benefit-item-text
-                p — Стоимость 9 500 рулей
-                p — Моментальная готовность
-                p — Элементарный процесс от создания до начала заработка
-              button.benefit-item-button Создать свою аудиокнигу
+              .benefit-item-img
+                img(src="images/man-with-mic.svg" alt="Мужчина с микрофоном")
+              .benefit-item-content
+                p.benefit-item-title Аудиокнига, созданная человеком
+                div.benefit-item-text
+                  p — Стоимость около 170 000 рублей
+                  p — Готовность 1 месяц
+                  p — Сложный, неоднозначный процесс до публикации в магазинах.
+              button.btn.btn-gray Долго и не выгодно
+          .col.col-50.col-m-100
+            .benefit-item.benefit-item-dark
+              .benefit-item-img
+                img(src="images/sound-wave.svg" alt="Звуковые волны")
+              .benefit-item-content
+                p.benefit-item-title Аудиокнига, созданная искусственным интеллектом
+                div.benefit-item-text
+                  p — Стоимость 9 500 рулей
+                  p — Моментальная готовность
+                  p — Элементарный процесс от создания до начала заработка
+              button.btn Создать свою аудиокнигу
 
 
     //features-section
