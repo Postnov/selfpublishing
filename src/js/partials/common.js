@@ -23,5 +23,13 @@ var publishSlider = new Swiper ('.js-publish-slider', {
       slidesPerView: 1,
       spaceBetween: 20
     },
+    650: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    979: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
   }
 });
