@@ -35,7 +35,9 @@ img {max-width: 100%;}
 /* header */
 .header {background-color: $secondary-dark; padding: 20px 0;
   .row {align-items: center;}
-  &-button {margin-left: auto; display: block; padding: 14px 50px;}
+  &-button {margin-left: auto; display: block; padding: 14px 50px;
+    @media (max-width: $mobile) {padding: 10px 30px;}
+  }
 }
 
 /* top-section */
@@ -73,9 +75,11 @@ img {max-width: 100%;}
   }
 }
 
-.top-audio { background-color: #fff; max-width: 1197px; padding: 40px 0 60px;
+.top-audio { background-color: #fff; max-width: 1197px; padding: 40px 25px 60px;
   margin-top: -50px; border-radius: 5px 5px 0px 0px; border-bottom: 1px solid $gray-dark; text-align: center; position: relative; top: 100px;
-  &-title {font-size: 1.75rem; color: $primary; margin: 0;}
+  &-title {font-size: 1.75rem; color: $primary; margin: 0;
+    @media (max-width: $mobile) {font-size: 1.35rem;}
+  }
   &-player {margin-top: 22px;}
 }
 
@@ -100,7 +104,8 @@ img {max-width: 100%;}
 /* benefit-section */
 
 /* features-section */
-.features-section { padding: 70px 0 160px;
+.features-section { padding: 100px 0;
+  @media (max-width: $mobile) {padding: 60px 0;}
   .features-item {
     @media (max-width: $tablet) {
       &:first-child {margin-bottom: 80px;}
@@ -123,7 +128,7 @@ img {max-width: 100%;}
   .suit-grid {margin-top: 35px;
     .row {align-items: stretch; margin: 0 -15px;}
     .col {padding: 0 15px;
-      @media (max-width: $mobile) {margin-bottom: 20px;}
+      @media (max-width: $tablet) {margin-bottom: 20px;}
     }
   }
   .suit-item { height: 100%; background-color: #fff; border-radius: 5px;
@@ -138,9 +143,9 @@ img {max-width: 100%;}
 
 /* offer-section */
 .offer-section { background-image: url('../images/union-gray.svg');
-  background-size: 900px auto; padding: 70px 0; text-align: center;
+  background-size: 900px auto; padding: 70px 0 150px; text-align: center;
   background-position: center center; background-repeat: no-repeat;
-  @media (max-width: $mobile) {text-align: left;}
+  @media (max-width: $mobile) {text-align: left; background-size: 500px; padding: 60px 0 100px;}
 
   &-title {color: $primary; font-size: 2.125rem; margin: 0;}
   &-subtitle {color: $secondary; font-size: 1.5rem; margin: 10px 0 0;
