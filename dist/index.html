@@ -23,7 +23,7 @@
         <div class="row">
           <div class="col col-50"><a class="header-logo" href="#"><img src="images/logo.svg" alt="Logo"></a></div>
           <div class="col col-50">
-            <button class="header-button btn">Вход</button>
+            <button class="header-button btn js-open-modal" data-modal="order">Вход</button>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@
         </div>
         <div class="features-item">
           <div class="row">
-            <div class="col col-50 col-m-100">
+            <div class="col col-40 col-m-100 offset-left-10">
               <p class="features-item-title">Все права остаются у вас</p>
               <p class="features-item-text">Вы самостоятельно распоряжаетесь своим прозведением и можете распространять его любыми доступными вам способами</p>
             </div>
@@ -210,7 +210,7 @@
       <div class="container section-container">
         <div class="features-item">
           <div class="row">
-            <div class="col col-40 col-t-50 col-m-100 m-left-1">
+            <div class="col col-40 col-t-50 col-m-100 offset-left-10">
               <p class="features-item-title">Удобный и простой интерфейс</p>
               <div class="features-item-text">
                 <p>Просматривайте книгу в электронном виде.</p>
@@ -255,6 +255,34 @@
         </div>
       </div>
     </footer>
+    <div class="overlay js-overlay-modal"></div>
+    <div class="modal" data-modal="order">
+      <div class="modal-window">
+        <div class="modal-close js-close-modal"></div>
+        <p class="modal-title">Оставьте свои контактные данные и получите первым доступ к сервису!</p>
+        <p class="modal-subtitle">А на электронную почту мы отправим Вам еще дополнительный подарок</p>
+        <form class="modal-form">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Ваше имя"><span class="form-error">Вы не забыли ввести имя</span>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Ваша электронная почта"><span class="form-error">Вы не забыли ввести электронную почту</span>
+          </div>
+          <button class="btn js-switch-modal" data-event="click" data-next-modal="success">Отправить</button>
+        </form>
+        <p class="modal-tip">Нажимая кнопку «Отправить», вы соглашаетесь с <a href="#">порядком обработки и использования персональных данных</a></p>
+      </div>
+    </div>
+    <div class="modal" data-modal="success">
+      <div class="modal-window">
+        <div class="modal-close js-close-modal"></div>
+        <p class="modal-title orange">Все получилось!</p>
+        <div class="modal-text">
+          <p>Мы отправили вам письмо с регистрационными данными. Как только мы будем готовы предоставить вам Beta-доступ к сервису — мы пришлем вам ссылку на вход в личный кабинет и подарок!</p>
+        </div>
+        <button class="btn js-close-modal">Спасибо, понятно</button>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
     <script src="js/main.js"></script>
   </body>
