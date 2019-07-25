@@ -95,7 +95,7 @@ img {max-width: 100%;}
 }
 
 .top-audio { background-color: #fff; max-width: 1197px; padding: 40px 25px 60px;
-  margin-top: -50px; border-radius: 5px 5px 0px 0px; border-bottom: 1px solid $gray-dark; text-align: center; position: relative; top: 100px;
+  margin-top: -50px; border-radius: 5px 5px 0px 0px; border-bottom: 1px solid $gray-dark; text-align: center; position: relative; top: 100px; margin: 0 auto;
   &-title {font-size: 1.75rem; color: $primary; margin: 0;
     @media (max-width: $mobile) {font-size: 1.35rem;}
   }
@@ -120,15 +120,22 @@ img {max-width: 100%;}
 
 /* trend-section */
 .trend-section { color: #fff; top: 300px; position: relative;
-  .container {background-color: $secondary-dark; background-image: url('../images/trend-bg-left.png'), url('../images/trend-bg-right.png'); padding: 140px 120px 110px; background-repeat: no-repeat; background-size: auto 100%, auto 100%; background-position: left center, right center; position: relative;
+  .container {background-color: $secondary-dark; background-image: url('../images/trend-bg-left.svg'), url('../images/trend-bg-right.svg'); padding: 140px 120px 110px; background-repeat: no-repeat; background-size: auto 100%, auto 100%; background-position: left center, right center; position: relative;
 
     &::after {content: ''; display: none; position: absolute; top: 0; left: 0; background-color: rgba($secondary-dark, .8); width: 100%; height: 100%; z-index: 1;
       @media (max-width: $narrow-screen) {display: block;}
     }
-    @media (max-width: $narrow-screen) {background-position: -30% center, right center;}
-    @media (max-width: $tablet) {background-position: -50% center, right center; padding: 60px 25px; background-size: auto 100%, 0 0;}
+    @media (max-width: $wide-screen) {background-position: -10% center, right center;}
+    @media (max-width: $narrow-screen) {background-position: -20% center, right center;}
+    @media (max-width: $tablet) {background-position: 100% center, right center; padding: 60px 25px; background-size: auto 100%, 0 0;}
   }
   .section-title, .section-subtitle {color: inherit;}
+  .section-title {
+    @media (max-width: $tablet) {max-width: 600px;}
+  }
+  .section-subtitle {
+    @media (max-width: $tablet) {max-width: 450px;}
+  }
   &-content {max-width: 500px; margin-left: auto; position: relative; z-index: 2;
     @media (max-width: $tablet) {max-width: unset;}
   }
