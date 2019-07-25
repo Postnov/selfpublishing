@@ -1,0 +1,23 @@
+.overlay.js-overlay-modal
+.modal(data-modal="order")
+  .modal-window
+    .modal-close.js-close-modal
+    p.modal-title Оставьте свои контактные данные и получите первым доступ к сервису!
+    p.modal-subtitle А на электронную почту мы отправим Вам еще дополнительный подарок
+    form.modal-form
+      .form-group
+        input.form-control(type="text" placeholder="Ваше имя")
+        span.form-error Вы не забыли ввести имя
+      .form-group
+        input.form-control(type="text" placeholder="Ваша электронная почта")
+        span.form-error Вы не забыли ввести электронную почту
+      button.btn.js-switch-modal(data-event="click" data-next-modal="success") Отправить
+    p.modal-tip Нажимая кнопку «Отправить», вы соглашаетесь с #[a(href="#") порядком обработки и использования персональных данных]
+
+.modal(data-modal="success")
+  .modal-window
+    .modal-close.js-close-modal
+    p.modal-title.orange Все получилось!
+    .modal-text
+      p Мы отправили вам письмо с регистрационными данными. Как только мы будем готовы предоставить вам Beta-доступ к сервису — мы пришлем вам ссылку на вход в личный кабинет и подарок!
+    button.btn.js-close-modal Спасибо, понятно

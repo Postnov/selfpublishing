@@ -12,7 +12,7 @@ html(lang="ru")
             a.header-logo(href="#")
               img(src="images/logo.svg" alt="Logo")
           .col.col-50
-            button.header-button.btn Вход
+            button.header-button.btn.js-open-modal(data-modal="order") Вход
 
     //top-sections
     section.section.top-section
@@ -173,4 +173,5 @@ html(lang="ru")
               a(href="mailto:hello@speechki.org") hello@speechki.org
 
 
+    include partials/modals.pug
     include partials/scripts.pug
