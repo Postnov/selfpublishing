@@ -60,6 +60,27 @@ document.querySelectorAll('.js-switch-modal').forEach(function(item) {
   })
 })
 
+if ('FormData' in window) { //проверяем, поддерживает ли браузер функцию FormData
+  form.preventDefault();
+
+  var form = document.querySelector('form'),
+      formData = new FormData(form),
+      request = new XMLHttpRequest();
+
+  request.open('POST', 'sendMail.php', true); // sendMail.php - обработчик запроса
+
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) { //проверяем статус запроса
+      //success
+      console.log(request.responseText);
+    } else {
+      //failed
+      console.log(request.responseText);
+    }
+  };
+
+  request.send(formData); // метод отправки данных
+}
 
 
 var topSlider = new Swiper ('.js-top-slider', {
